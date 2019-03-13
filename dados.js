@@ -53,4 +53,24 @@ cenarios.map(cenario => {
 
 // Apresentação dos Resultados
 
-cenarios.map(cenario => {});
+cenarios.map(cenario => {
+  console.log(`Resultados para o cenário de ${cenario.name} :`);
+  console.log(`Casos em cada face do dado:\n`);
+
+  console.log(`Um: ${cenario.um} casos\n`);
+  console.log(`Dois: ${cenario.dois} casos\n`);
+  console.log(`Três: ${cenario.tres} casos\n`);
+  console.log(`Quatro: ${cenario.quatro} casos\n`);
+  console.log(`Cinco: ${cenario.cinco} casos\n`);
+  console.log(`Seis: ${cenario.seis} casos\n`);
+  console.log("\n");
+
+  console.log("Probabilidade:\n");
+  console.log(`Um: ${cenario.um / cenario.max}\n`);
+  console.log(`Dois: ${cenario.dois / cenario.max}\n`);
+  console.log(`Três: ${cenario.tres / cenario.max}\n`);
+  console.log(`Quatro: ${cenario.quatro / cenario.max}\n`);
+  console.log(`Cinco: ${cenario.cinco / cenario.max}\n`);
+  console.log(`Seis: ${cenario.seis / cenario.max}\n`);
+  console.log("Fim do Resultado\n\n\n");
+});
